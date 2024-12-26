@@ -5,6 +5,7 @@ This is our implemented source code for the paper "A Bearing Fault Diagnosis Fra
 ```bash 
 conda create -n BEARING python=3.10.12 -y
 conda activate BEARING
+pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
@@ -13,28 +14,39 @@ pip install -r requirements.txt
 
 
 ## Getting Started
-- Installation
+### Installation
+
 ``` bash
 git clone https://github.com/giabao804/few-shot-structural-rep.git
-```
-```bash
 cd few-shot-structural-rep
 ```
-- Training for 1 shot
-``` bash
-python3 train_1shot.py --dataset 'CWRU' --training_samples_CWRU 30 --model_name 'few-shot-structural'
-```
-- Testing for 1 shot
+
+### Training
 ```bash
-python3 test_1shot.py --dataset 'CWRU' --best_weight 'PATH TO BEST WEIGHT'
+chmod +x train.sh
 ```
-- Training for 5 shot
-``` bash
-python3 train_5shot.py --dataset 'CWRU' --training_samples_CWRU 60
-```
-- Testing for 5 shot
+- 1-shot training
+
 ```bash
-python3 test_5shot.py --dataset 'CWRU' --best_weight 'PATH TO BEST WEIGHT'
+bash train.sh 1 
+```
+- 5-shot training
+```bash
+bash train.sh 1 
+```
+
+### Testing
+
+```bash
+chmod +x test.sh
+```
+- 1-shot testing
+```bash
+bash test.sh 1 
+```
+- 5-shot testing
+```bash
+bash test.sh 5
 ```
 
 ## Contact
