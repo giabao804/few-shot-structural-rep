@@ -1,6 +1,6 @@
 # A Bearing Fault Diagnosis Framework Based on Few-Shot Learning with Distribution Consistency and Structural Reparameterization
 
-This is our implemented source code for the paper "A Bearing Fault Diagnosis Framework Based on Few-Shot Learning with Distribution Consistency and Structural Reparameterization" accepted by International Conference on Green Technology and Sustainable Development 7th
+This is our implemented source code for the paper "[A Bearing Fault Diagnosis Framework Based on Few-Shot Learning with Distribution Consistency and Structural Reparameterization](https://link.springer.com/chapter/10.1007/978-3-031-76197-3_14?fbclid=IwY2xjawHWLUdleHRuA2FlbQIxMAABHXh-wWgqxGsvqpThkMs1EzZL5eM_bhlo0lZbSFYjfIeX2Yce0VH5u4wPEA_aem_gNb2HGH12E5usjY4AJRLVA)" accepted by International Conference on Green Technology and Sustainable Development 7th
 ## Environment
 ```bash 
 conda create -n BEARING python=3.10.12 -y
@@ -32,7 +32,7 @@ bash train.sh 1
 ```
 - 5-shot training
 ```bash
-bash train.sh 1 
+bash train.sh 5
 ```
 
 ### Testing
