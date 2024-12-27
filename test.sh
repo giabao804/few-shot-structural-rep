@@ -20,7 +20,7 @@ DATASET="CWRU"
 MODEL_NAME="Net"
 
 
-# 🛠️ **IMPORTANT:** Update these paths to point to your actual best weight files
+# 🛠️ **IMPORTANT:** Update these paths to point to actual best weight files
 BEST_WEIGHT_1SHOT="/path/to/1shot_best_weight.pth"
 BEST_WEIGHT_5SHOT="/path/to/5shot_best_weight.pth"
 

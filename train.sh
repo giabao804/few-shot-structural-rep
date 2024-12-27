@@ -18,12 +18,12 @@ fi
 
 MODE=$1
 
-# Define common parameters
+# Config parameters
 DATASET="CWRU"
 TRAINING_SAMPLES="60"
 MODEL_NAME="few-shot-structural-rep"
 
-# Determine which training script to run based on the mode
+
 if [ "$MODE" -eq 1 ]; then
     TRAIN_SCRIPT="train_1shot.py"
     TRAINING_SAMPLES_OPTION="--training_samples_CWRU $TRAINING_SAMPLES"
@@ -54,4 +54,4 @@ echo "========================================="
 
 echo "Starting ${MODE}-shot training..."
 python3 "$TRAIN_SCRIPT" --dataset "$DATASET" $TRAINING_SAMPLES_OPTION --model_name "$MODEL_NAME"
-echo "Training completed successfully for ${MODE}-shot learning."
+echo "Training completed successfully for ${TRAINING_SAMPLES} training samples with ${MODE}-shot learning."
